@@ -12,12 +12,13 @@
 
 body {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column; /* Change to column for better mobile layout */
+  align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 190vh;
   background-color: var(--dark-color);
   overflow: hidden;
-  perspective: 1000px;
+  perspective: 800px; /* Adjust perspective for smaller screens */
 }
 .night {
   position: fixed;
@@ -2022,7 +2023,6 @@ body {
 
 #play-button {
   background-color: #f7980a; /* Verde */
-  color: white;
   padding: 15px 32px;
   text-decoration: none;
   display: inline-block;
@@ -2032,17 +2032,15 @@ body {
   border-radius: 12px;
   font-size: 1rem;
   font-weight: bold;
-  color: #fff;
   right: 50%;
-  color: red;
-  text-shadow: 2px 2px 4px #000;
+  text-shadow: 2px 2px 4px #ffffff;
   border-radius: 10px;
   transform: translateX(+250%);
   /* Resto de tus estilos */
   top: 75%; /* Ajusta este valor para controlar la altura */
   z-index: 1; /* Asegura que el texto esté por encima de las flores */
   font-family: 'Dancing Script', cursive;
-  color: #2c07fc;
+  color: #000000;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   animation: glow 1s infinite alternate;
   white-space: nowrap;
